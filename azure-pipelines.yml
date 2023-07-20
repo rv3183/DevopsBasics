@@ -6,8 +6,8 @@
 trigger:
 - main
 
-pool:
-  vmImage: ubuntu-latest
+pool: LocalWin
+
 
 steps:
 - script: echo Hello, world!
