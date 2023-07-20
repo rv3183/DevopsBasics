@@ -31,4 +31,10 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'warfile'
     publishLocation: 'Container'
+- task: PowerShell@2
+  inputs:
+    targetType: 'inline'
+    script: |
+      cd C:\agent\_work\2\a\webapp\target
+      copy .\webapp.war C:\Users\rahul\Downloads\apache-tomcat-9.0.78-windows-x64\apache-tomcat-9.0.78\webapps
 
