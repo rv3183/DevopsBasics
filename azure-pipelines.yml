@@ -8,10 +8,7 @@ trigger:
 
 pool: LocalWin
 
-
 steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
 
 - task: Maven@4
   inputs:
